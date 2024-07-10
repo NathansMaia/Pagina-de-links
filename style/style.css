@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e0e0e0; /* Cor de fundo padrão */
+    color: #333;
+    display: flex;
+    justify-content: center; /* Centraliza o contêiner horizontalmente */
+    align-items: center; /* Centraliza verticalmente na página */
+    min-height: 100vh; /* Garante que o corpo da página ocupe toda a altura visível */
+    transition: background-color 0.3s, color 0.3s;
+}
+body.dark-mode {
+    background-color: #222; /* Cor de fundo para modo escuro */
+    color: #f0f0f0;
+}
+.container {
+    max-width: 600px;
+    margin: 20px; /* Adiciona margem para espaçamento externo */
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+.container.dark-mode {
+    background-color: #444;
+    color: #f0f0f0;
+}
+.dark-mode-toggle {
+    background: none;
+    border: none;
+    font-size: 12px;
+    cursor: pointer;
+    color: inherit;
+    transition: color 0.3s;
+    width: 150px; /* Ajuste do tamanho */
+    margin-top: 10px; /* Espaçamento */
+}
+.dark-mode-toggle:hover {
+    color: #777;
+}
+header {
+    margin-bottom: 20px;
+}
+.header-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header-content img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+header h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+header p {
+    font-size: 16px;
+    color: #777;
+}
+body.dark-mode header p {
+    color: #bbb;
+}
+/* Links e Botões */
+.botoes-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+.link {
+    width: 100%;
+    text-decoration: none; /* Remove a linha de super link */
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #555;
+}
+body.dark-mode button {
+    background-color: #555;
+}
+body.dark-mode button:hover {
+    background-color: #777;
+}
+/* Rodapé */
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+.btn-footer {
+    color: #333;
+    font-size: 40px;
+    transition: color 0.3s ease;
+}
+.btn-footer:hover {
+    color: #555;
+}
+body.dark-mode .btn-footer {
+    color: #bbb;
+}
+body.dark-mode .btn-footer:hover {
+    color: #ddd;
+}
+/* Responsivo */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
