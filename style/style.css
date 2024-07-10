@@ -31,11 +31,11 @@ body.dark-mode {
 .dark-mode-toggle {
     background: none;
     border: none;
-    font-size: 12px;
+    font-size: 24px;
     cursor: pointer;
     color: inherit;
     transition: color 0.3s;
-    width: 150px; /* Ajuste do tamanho */
+    width: 50px; /* Ajuste do tamanho */
     margin-top: 10px; /* Espaçamento */
 }
 .dark-mode-toggle:hover {
@@ -56,6 +56,10 @@ header {
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 15px;
+    transition: filter 0.3s; /* Adiciona uma transição suave ao filtro */
+}
+.header-content img.dark-mode {
+    filter: grayscale(100%);
 }
 header h1 {
     font-size: 24px;
